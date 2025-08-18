@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(image/back-image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+nav > img{
+    width: 140px;
+}
+
+nav > ul > li{
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+nav > ul > li > a{
+    color: #333;
+
+}
+
+.login-btn{
+    color: #333;
+    margin-right: 15px;
+
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(245, 0, 143), rgba(243, 2, 142, 0.938));
+    padding: 15px 30px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.contain{
+    width: 600px;
+    margin-top: 10%;
+}
+
+.contain > h1{
+    color: #222;
+    font-size: 70px;
+}
+
+.contain > p{
+    color: #333;
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+
+.contain > .btn{
+    padding: 20px 80px;
+    font-size: 17px;
+    animation-delay: 1s
+}
+
+.contain > img{
+    width: 385px;
+    bottom: 0;
+    position: absolute;
+    right: 14%;
+    animation-delay: 1.5s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: all 0.5s linear forwards;
+}
+
+@keyframes all {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
